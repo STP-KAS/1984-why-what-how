@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`c2939cf`](https://github.com/STP-KAS/sixpack.wtf/commit/c2939cf6b7ea3c9aa239defecb684717780bc920). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`a921e64`](https://github.com/STP-KAS/sixpack.wtf/commit/a921e64312931b80d726537ce963b2d298f849f0). This repository does not run the page.
 
 Read on 29 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -37,6 +37,16 @@ Read on 29 Sep 2026 against that commit. A local edit on this desk that is not i
 **How.** Opening any of those five panels is the indoor room. The keyboard does not drive while it is open. A walk that was already started keeps going on foot. Square, Esc, the rules, the bench, and the guide put you back outside.
 
 **Solution.** That switch is in sixpack.wtf [`c2939cf`](https://github.com/STP-KAS/sixpack.wtf/commit/c2939cf6b7ea3c9aa239defecb684717780bc920). The page was not clicked in a browser.
+
+## Test 4. An ordinary purchase had no banner
+
+**Problem.** Buying the roadster showed "You drive." A lap showed "One lap." Coffee, water, and the other counter items only wrote a chat line.
+
+**Why.** A purchase should be visible on the square, not only in the chat that scrolls away.
+
+**How.** Every successful shop purchase shows a banner. The roadster still says "You drive." A lap still says "One lap." Anything else says "Paid."
+
+**Solution.** The banner is in sixpack.wtf [`a921e64`](https://github.com/STP-KAS/sixpack.wtf/commit/a921e64312931b80d726537ce963b2d298f849f0). The page was not clicked in a browser.
 
 ## Why
 
