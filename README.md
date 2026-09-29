@@ -4,9 +4,19 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`9478359`](https://github.com/STP-KAS/sixpack.wtf/commit/9478359cde4551c8e49ef294b2b2006b6f03fa8c). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`dd91923`](https://github.com/STP-KAS/sixpack.wtf/commit/dd9192361123584a5c59a6a1dd7a76f2ce7dc3f4). This repository does not run the page.
 
 Read on 29 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
+
+## Test 1. The till asked after the wallet had signed
+
+**Problem.** A Kasware or Kastle shop payment signed before the till checked the spending rules. The server also waited on Testnet 10 before that check. A second click could open a second wallet payment. If the till then refused, the page did not keep the txid, so the next Buy could send again.
+
+**Why.** The confirm line is the rule that is supposed to be checked before the coins move. A guest tab already asked first. A wallet did not. The public Testnet 10 nodes used for that payment were synced (electron-10, vector-10, muon-10, alpha-10, kaspad 2.1.0, ordinary fee 100 sompi per gram). The public acceptance list was still stopped at 25 Sep 2026, so waiting on that list was not a check.
+
+**How.** The till checks the shop, the rail, the daily cap, and the confirm line before it looks for a transaction. With no txid yet it answers that the buy is ready, and it does not read the chain. The page asks, the wallet signs, and the txid is written into the paste box before the till claims it. A Buy already in progress ignores another click. A pasted txid is claimed and is not sent again.
+
+**Solution.** That order is in sixpack.wtf [`dd91923`](https://github.com/STP-KAS/sixpack.wtf/commit/dd9192361123584a5c59a6a1dd7a76f2ce7dc3f4). A local check covered the ready answer with no chain lookup, a blocked shop with no chain lookup, and a pasted txid that still credits. No coins were sent for the check.
 
 ## Why
 
@@ -40,7 +50,7 @@ GitHub Pages serves the page. The ledger runs with the sixpack server. The page 
 
 **Moving.** On a computer, click the ground to point where you walk, or use the keyboard. Hold the left mouse button and move to look all the way around. W A S D move the way you look. The arrow keys do too. Stand next to a building and click it to go in. Buy the roadster and you drive it. Esc closes. On a phone, drag a finger to look. Tap the ground to walk or drive. Tap a building you are next to and you go in. Step moves you. Left and Right turn you. Square closes a shop. A phone wallet cannot switch to Testnet 10 from the page. Set Testnet 10 inside Kasware or Kastle, or open the page in the Kastle browser. The roadster is 1.00 toy dollar. Get in to drive. Get out to walk. Inside a shop you are on foot. On a computer, G gets in or out. E talks.
 
-**A shop.** One rail for the whole menu. It opens on POCencept. One Buy button. Prices stay toy cents when the KAS price moves. Coffee is 2.50 toy dollars, supper is 14.00, the roadster is 1.00, and a lap of the square is 100.00. For tKAS, the till converts those cents with the live KAS/USD quote shown on the page. A short payment is refused. The same transaction does not mint the tag twice. POCencept and KUSDT move only in the ledger.
+**A shop.** One rail for the whole menu. It opens on POCencept. One Buy button. Prices stay toy cents when the KAS price moves. Coffee is 2.50 toy dollars, supper is 14.00, the roadster is 1.00, and a lap of the square is 100.00. For tKAS, the till converts those cents with the live KAS/USD quote shown on the page. A wallet shop payment asks the till before the wallet signs. The txid stays in the paste box if the till does not claim it, and the next Buy claims that same transaction. A short payment is refused. The same transaction does not mint the tag twice. POCencept and KUSDT move only in the ledger.
 
 **The bank.** The thin bar lists tKAS, POCencept, and KUSDT. The bank opens as a centered swap popup. Three balance cards show tKAS, POCencept, and KUSDT, with locked and purse on the toy cards. Step 1 locks tKAS. Step 2 redeems toy dollars. The Result line on the panel says whether the swap landed. A lock looks for that Testnet 10 payment on the public transaction list. That list stopped storing new payments on 25 Sep 2026. When the list does not have the payment, the server reads it from a synced node, from about the last minute of accepted blocks. The sender and the reserve output still have to match. The live quote and the reserve address sit on the fine line. Three booths. The open booth is the one whose buttons show. tKAS locks into POCencept or KUSDT at the live quote. POCencept redeems the locked part and can hand out the practice purse. KUSDT is the booth with the freeze. The purse adds 20.00 to POCencept and 20.00 to KUSDT. Those coins are unlocked. A shop burns the purse before the locked part. The purse does not redeem. A failed redeem puts the toy balance back. Redeem sends tKAS back only for the locked portion. Opening the bank, a shop, the rules, the bench, or the guide hides Who pays. The peg note sits in Rules.
 
