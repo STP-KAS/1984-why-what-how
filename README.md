@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`dd30dd0`](https://github.com/STP-KAS/sixpack.wtf/commit/dd30dd0fd772e7ae12e186676d7b7c9c84e372b8). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`90ec102`](https://github.com/STP-KAS/sixpack.wtf/commit/90ec10220d2663ada231a9c85b463ea9061b8f87). This repository does not run the page.
 
 Read on 29 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -24,7 +24,7 @@ KCC-20 is still Draft. There is no spendable layer-1 stable in this till. The th
 
 1984 is a basic, adjustable toy. A person walks up to a shop on proof of work and pays with one of the three rails. The town on the page is Ashfields. The drawing is original: stone town, dirt path, fountain, stalls, and a roadster that stays on the square. A lap is a turn. Jagex art, the RuneScape wordmark, a private-server engine, a soundtrack file, and the Tidewater fishing island are absent.
 
-The shops are Nia's Cafe, Orin's Table, Mara's Groceries, and Pike's Roadster. Stand next to a building and click it to go in. The counter opens as a popup, with a picture on each thing you can buy. One rail, one Buy. Far from the door, that click walks you there, and you go in when you arrive. Pike sells the roadster for 1.00 toy dollar. Get in to drive. Get out to walk. Inside a shop you are on foot. The car does not leave town. Venn's bank is a room with three booths. It opens as a swap popup: a tKAS box, a toy-dollar box, and a Result line on the panel.
+The shops are Nia's Cafe, Orin's Table, Mara's Groceries, and Pike's Roadster. Stand next to a building and click it to go in. The counter opens as a popup, with a picture on each thing you can buy. One rail, one Buy. Far from the door, that click walks you there, and you go in when you arrive. Pike sells the roadster for 1.00 toy dollar. Buy the roadster and you drive it. Get out to walk. Inside a shop you are on foot. The car does not leave town. Venn's bank is a room with three booths. It opens as a swap popup: a tKAS box, a toy-dollar box, and a Result line on the panel.
 
 A welcome gate comes up first. The top bar shows who is paying and the three balances. Who pays starts closed, in the corner. The left side opens the square, the shops, the bank, the spending rules, the bench, and the guide. The page asks for no seed. A mainnet wallet is refused.
 
@@ -36,7 +36,7 @@ GitHub Pages serves the page. The ledger runs with the sixpack server. The page 
 
 **Returning** closes the gate and leaves Ashfields open. Who pays stays closed. Kasware, Kastle, a pasted `kaspatest:` address, or a `.kas` name that already resolves stays on this browser and keeps its history. A name that points at you ties the public spend to you. A plain address is the preference here. Creating a name is KNS. This page only resolves one.
 
-**Moving.** On a computer, click the ground to walk. Hold the left mouse button and move to look all the way around. W A S D move the way you look. Stand next to a building and click it to go in. Esc closes. On a phone, drag a finger to look. Tap the ground to walk or drive. Tap a building you are next to and you go in. Step moves you. Left and Right turn you. Square closes a shop. A phone wallet cannot switch to Testnet 10 from the page. Set Testnet 10 inside Kasware or Kastle, or open the page in the Kastle browser. The roadster is 1.00 toy dollar. Get in to drive. Get out to walk. Inside a shop you are on foot. On a computer, G gets in or out. E talks.
+**Moving.** On a computer, click the ground to point where you walk, or use the keyboard. Hold the left mouse button and move to look all the way around. W A S D move the way you look. The arrow keys do too. Stand next to a building and click it to go in. Buy the roadster and you drive it. Esc closes. On a phone, drag a finger to look. Tap the ground to walk or drive. Tap a building you are next to and you go in. Step moves you. Left and Right turn you. Square closes a shop. A phone wallet cannot switch to Testnet 10 from the page. Set Testnet 10 inside Kasware or Kastle, or open the page in the Kastle browser. The roadster is 1.00 toy dollar. Get in to drive. Get out to walk. Inside a shop you are on foot. On a computer, G gets in or out. E talks.
 
 **A shop.** One rail for the whole menu. It opens on POCencept. One Buy button. Prices stay toy cents when the KAS price moves. Coffee is 2.50 toy dollars, supper is 14.00, the roadster is 1.00, and a lap of the square is 100.00. For tKAS, the till converts those cents with the live KAS/USD quote shown on the page. A short payment is refused. The same transaction does not mint the tag twice. POCencept and KUSDT move only in the ledger.
 
