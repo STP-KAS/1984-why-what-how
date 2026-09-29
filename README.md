@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`90ec102`](https://github.com/STP-KAS/sixpack.wtf/commit/90ec10220d2663ada231a9c85b463ea9061b8f87). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`9478359`](https://github.com/STP-KAS/sixpack.wtf/commit/9478359cde4551c8e49ef294b2b2006b6f03fa8c). This repository does not run the page.
 
 Read on 29 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -35,6 +35,8 @@ GitHub Pages serves the page. The ledger runs with the sixpack server. The page 
 **New arrival** asks the server for a funded test address that exists only in that browser tab. The browser receives the address and a token. It receives no key. The address and token sit in session storage. They are not written into the saved-wallet store. The fund is 10000 tKAS, paid from Grok's Testnet-10 wallet. Close the tab and the leftover is swept back to the reserve after a short grace, so a refresh does not burn the wallet. One thousand of these can be opened in a UTC day. When that allowance is already used, the card closes, the square opens, and the chat says a new test wallet waits until tomorrow. Nothing is minted ahead of a visit. Coins return when the tab closes, so the day's thousand are not all out at once.
 
 **Returning** closes the gate and leaves Ashfields open. Who pays stays closed. Kasware, Kastle, a pasted `kaspatest:` address, or a `.kas` name that already resolves stays on this browser and keeps its history. A name that points at you ties the public spend to you. A plain address is the preference here. Creating a name is KNS. This page only resolves one.
+
+**Fees.** Every Testnet 10 send pays twice the standard fee. The quiet standard is 100 sompi per gram, so the send pays 200. If the node quotes a higher ordinary rate, the send pays twice that quote. A wallet payment also adds 0.02 tKAS so a wallet that only understands a flat fee still clears that double rate. The faucet still pays 0.6 tKAS. The miner fee is extra.
 
 **Moving.** On a computer, click the ground to point where you walk, or use the keyboard. Hold the left mouse button and move to look all the way around. W A S D move the way you look. The arrow keys do too. Stand next to a building and click it to go in. Buy the roadster and you drive it. Esc closes. On a phone, drag a finger to look. Tap the ground to walk or drive. Tap a building you are next to and you go in. Step moves you. Left and Right turn you. Square closes a shop. A phone wallet cannot switch to Testnet 10 from the page. Set Testnet 10 inside Kasware or Kastle, or open the page in the Kastle browser. The roadster is 1.00 toy dollar. Get in to drive. Get out to walk. Inside a shop you are on foot. On a computer, G gets in or out. E talks.
 
