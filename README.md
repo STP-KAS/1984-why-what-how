@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/kworld.html](https://sixpack.wtf/kworld.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`969be25`](https://github.com/STP-KAS/sixpack.wtf/commit/969be25). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`1479c79`](https://github.com/STP-KAS/sixpack.wtf/commit/1479c7942514878b1020cd8fb286b8cc721470da). This repository does not run the page.
 
 Read on 29 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -22,7 +22,7 @@ KCC-20 is still Draft. There is no spendable layer-1 stable in this till. The th
 
 ## What
 
-Kworld is a basic, adjustable toy. A person walks up to a shop on proof of work and pays with one of the three rails. The town on the page is Ashfields. The drawing is original: stone town, dirt path, fountain, stalls, and a roadster that stays on the square. A lap is a turn. Jagex art, the RuneScape wordmark, a private-server engine, a soundtrack file, and the Tidewater fishing island are absent.
+1984 is a basic, adjustable toy. A person walks up to a shop on proof of work and pays with one of the three rails. The town on the page is Ashfields. The drawing is original: stone town, dirt path, fountain, stalls, and a roadster that stays on the square. A lap is a turn. Jagex art, the RuneScape wordmark, a private-server engine, a soundtrack file, and the Tidewater fishing island are absent.
 
 The shops are Nia's Cafe, Orin's Table, Mara's Groceries, and Pike's Roadster. Venn's bank is a room with three booths. It is a chest, and it has no menu.
 
@@ -40,11 +40,11 @@ GitHub Pages serves the page. The ledger runs with the sixpack server. The page 
 
 **A shop.** One rail for the whole menu. It opens on POCencept. One Buy button. Prices stay toy cents when the KAS price moves. Coffee is 2.50 toy dollars, supper is 14.00, and a lap of the square is 100.00. For tKAS, the till converts those cents with the live KAS/USD quote shown on the page. A short payment is refused. The same transaction does not mint the tag twice. POCencept and KUSDT move only in the ledger.
 
-**The bank.** The panel lists tKAS, POCencept, and KUSDT, each with the amount, the locked part, and the purse. Three booths. The open booth is the one whose buttons show. tKAS locks into POCencept or KUSDT at the live quote. POCencept redeems the locked part and can hand out the practice purse. KUSDT is the booth with the freeze. The purse adds 20.00 to POCencept and 20.00 to KUSDT. Those coins are unlocked. A shop burns the purse before the locked part. The purse does not redeem. A failed redeem puts the toy balance back. Redeem sends tKAS back only for the locked portion. Opening the bank, a shop, the rules, the bench, or the guide hides Who pays. The peg note sits in Rules.
+**The bank.** The thin bar lists tKAS, POCencept, and KUSDT. The chest shows one rail, with the amount, the locked part, and the purse. The live quote and the reserve address sit on the tKAS booth. Three booths. The open booth is the one whose buttons show. tKAS locks into POCencept or KUSDT at the live quote. POCencept redeems the locked part and can hand out the practice purse. KUSDT is the booth with the freeze. The purse adds 20.00 to POCencept and 20.00 to KUSDT. Those coins are unlocked. A shop burns the purse before the locked part. The purse does not redeem. A failed redeem puts the toy balance back. Redeem sends tKAS back only for the locked portion. Opening the bank, a shop, the rules, the bench, or the guide hides Who pays. The peg note sits in Rules.
 
 **Rules.** A daily cap, a shop list, a rail list, and a confirm line. An empty list allows every shop and every rail. Above the confirm line the till waits for a second yes. On a test tab that yes is checked before the key signs.
 
-The rules panel is a stand-in you can click. A covenant, in the sense SilverScript and the Kaspero Labs freelancer sheet use the word, is a rule the Kaspa network enforces on the coins. The sheet holds the coins. Kworld's server holds the toy ledger. That is the gap. This square does not compile a SilverScript covenant into the till.
+The rules panel is a stand-in you can click. A covenant, in the sense SilverScript and the Kaspero Labs freelancer sheet use the word, is a rule the Kaspa network enforces on the coins. The sheet holds the coins. 1984's server holds the toy ledger. That is the gap. This square does not compile a SilverScript covenant into the till.
 
 A vProg guest, in the early prototype, applies one declared step and can be checked against that step. The tic-tac-toe guest does that for a ply. A shop spend on this square is a row in the village ledger. Coffee is not a move in that match.
 
