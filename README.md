@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`1f1b225`](https://github.com/STP-KAS/sixpack.wtf/commit/1f1b225231b53831df27f04ac416d7bce2f2287f). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`4c44b9d`](https://github.com/STP-KAS/sixpack.wtf/commit/4c44b9d19dda19e3c18c7355132538ced391cba9). This repository does not run the page.
 
 Read on 29 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -32,11 +32,11 @@ GitHub Pages serves the page. The ledger runs with the sixpack server. The page 
 
 ## How
 
-**New arrival** asks the server for a funded test address that exists only in that browser tab. The browser receives the address and a token. It receives no key. The address and token sit in session storage. They are not written into the saved-wallet store. The fund is 400 tKAS. Close the tab and the leftover is swept back to the reserve after a short grace, so a refresh does not burn the wallet. One network can open 8 of these in a UTC day. The day allows 40 in all. When that allowance is already used, the card closes, the square opens, and the chat says a new test wallet waits until tomorrow. Nothing is minted.
+**New arrival** asks the server for a funded test address that exists only in that browser tab. The browser receives the address and a token. It receives no key. The address and token sit in session storage. They are not written into the saved-wallet store. The fund is 10000 tKAS, paid from Grok's Testnet-10 wallet. Close the tab and the leftover is swept back to the reserve after a short grace, so a refresh does not burn the wallet. One thousand of these can be opened in a UTC day. When that allowance is already used, the card closes, the square opens, and the chat says a new test wallet waits until tomorrow. Nothing is minted ahead of a visit. Coins return when the tab closes, so the day's thousand are not all out at once.
 
 **Returning** closes the gate and leaves Ashfields open. Who pays stays closed. Kasware, Kastle, a pasted `kaspatest:` address, or a `.kas` name that already resolves stays on this browser and keeps its history. A name that points at you ties the public spend to you. A plain address is the preference here. Creating a name is KNS. This page only resolves one.
 
-**Moving.** Click the ground to walk. Hold the left mouse button and move to look all the way around. Left and right turn the view. W A S D move the way you look. Buy the roadster and you drive it on the square. Inside a shop you get out and walk. E talks. Esc closes.
+**Moving.** On a computer, click the ground to walk. Hold the left mouse button and move to look all the way around. W A S D move the way you look. Esc closes. On a phone, drag a finger to look. Tap the ground to walk or drive. Step moves you. Left and Right turn you. Square closes a shop. A phone wallet cannot switch to Testnet 10 from the page. Set Testnet 10 inside Kasware or Kastle, or open the page in the Kastle browser. Buy the roadster and you drive it on the square. Inside a shop you get out and walk. E talks.
 
 **A shop.** One rail for the whole menu. It opens on POCencept. One Buy button. Prices stay toy cents when the KAS price moves. Coffee is 2.50 toy dollars, supper is 14.00, the roadster is 20.00, and a lap of the square is 100.00. For tKAS, the till converts those cents with the live KAS/USD quote shown on the page. A short payment is refused. The same transaction does not mint the tag twice. POCencept and KUSDT move only in the ledger.
 
