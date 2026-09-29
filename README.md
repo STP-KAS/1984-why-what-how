@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`4dcedc7`](https://github.com/STP-KAS/sixpack.wtf/commit/4dcedc73ff137f120fe97b31c8dc126d23eacb02). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`c2939cf`](https://github.com/STP-KAS/sixpack.wtf/commit/c2939cf6b7ea3c9aa239defecb684717780bc920). This repository does not run the page.
 
 Read on 29 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -27,6 +27,16 @@ Read on 29 Sep 2026 against that commit. A local edit on this desk that is not i
 **How.** The till reads the ordinary bucket from a synced Testnet 10 node and answers with twice that rate, and never under 200. The page asks the till before the wallet signs. If the read fails, the page still asks for 200. On 29 Sep 2026 the public nodes (electron-10, vector-10, muon-10, alpha-10) were synced, kaspad 2.1.0, and every bucket was 100, so the till answered 200. The acceptance list was still stopped.
 
 **Solution.** The quote is in sixpack.wtf [`4dcedc7`](https://github.com/STP-KAS/sixpack.wtf/commit/4dcedc73ff137f120fe97b31c8dc126d23eacb02). A local check used a doubled rate of 800 and a dead quote that stays at 200. The live till answered `feerate` 200. No coins were sent.
+
+## Test 3. The shop menu left you driving
+
+**Problem.** Standing at a door and clicking the building put you in the room, on foot. Opening Cafe, Table, Market, Roadster, or Bank from the side menu opened the counter and left the camera outside, so the keyboard could still drive.
+
+**Why.** Inside a shop you are on foot. The car waits. You drive again when you leave, unless you already got out.
+
+**How.** Opening any of those five panels is the indoor room. The keyboard does not drive while it is open. A walk that was already started keeps going on foot. Square, Esc, the rules, the bench, and the guide put you back outside.
+
+**Solution.** That switch is in sixpack.wtf [`c2939cf`](https://github.com/STP-KAS/sixpack.wtf/commit/c2939cf6b7ea3c9aa239defecb684717780bc920). The page was not clicked in a browser.
 
 ## Why
 
@@ -58,7 +68,7 @@ GitHub Pages serves the page. The ledger runs with the sixpack server. The page 
 
 **Fees.** Every Testnet 10 send pays twice the standard fee. The quiet standard is 100 sompi per gram, so the send pays 200. If the node quotes a higher ordinary rate, the send pays twice that quote. A wallet payment also adds 0.02 tKAS so a wallet that only understands a flat fee still clears that double rate. A wallet shop payment and a wallet lock read the doubled rate from the till before they sign. If that read fails, they still ask for 200. The faucet still pays 0.6 tKAS. The miner fee is extra.
 
-**Moving.** On a computer, click the ground to point where you walk, or use the keyboard. Hold the left mouse button and move to look all the way around. W A S D move the way you look. The arrow keys do too. Stand next to a building and click it to go in. Buy the roadster and you drive it. Esc closes. On a phone, drag a finger to look. Tap the ground to walk or drive. Tap a building you are next to and you go in. Step moves you. Left and Right turn you. Square closes a shop. A phone wallet cannot switch to Testnet 10 from the page. Set Testnet 10 inside Kasware or Kastle, or open the page in the Kastle browser. The roadster is 1.00 toy dollar. Get in to drive. Get out to walk. Inside a shop you are on foot. On a computer, G gets in or out. E talks.
+**Moving.** On a computer, click the ground to point where you walk, or use the keyboard. Hold the left mouse button and move to look all the way around. W A S D move the way you look. The arrow keys do too. Stand next to a building and click it to go in. Buy the roadster and you drive it. Esc closes. On a phone, drag a finger to look. Tap the ground to walk or drive. Tap a building you are next to and you go in. Step moves you. Left and Right turn you. Square closes a shop. A phone wallet cannot switch to Testnet 10 from the page. Set Testnet 10 inside Kasware or Kastle, or open the page in the Kastle browser. The roadster is 1.00 toy dollar. Get in to drive. Get out to walk. Inside a shop you are on foot, including when the counter is opened from the menu. On a computer, G gets in or out. E talks.
 
 **A shop.** One rail for the whole menu. It opens on POCencept. One Buy button. Prices stay toy cents when the KAS price moves. Coffee is 2.50 toy dollars, supper is 14.00, the roadster is 1.00, and a lap of the square is 100.00. For tKAS, the till converts those cents with the live KAS/USD quote shown on the page. A wallet shop payment asks the till before the wallet signs. The txid stays in the paste box if the till does not claim it, and the next Buy claims that same transaction. A short payment is refused. The same transaction does not mint the tag twice. POCencept and KUSDT move only in the ledger.
 
