@@ -4,9 +4,9 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`a921e64`](https://github.com/STP-KAS/sixpack.wtf/commit/a921e64312931b80d726537ce963b2d298f849f0). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`c170fde`](https://github.com/STP-KAS/sixpack.wtf/commit/c170fde1071d38a9b03c2ae2edc62af3992f4ffa). This repository does not run the page.
 
-Read on 29 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
+Read on 30 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
 ## Test 1. The till asked after the wallet had signed
 
@@ -48,6 +48,16 @@ Read on 29 Sep 2026 against that commit. A local edit on this desk that is not i
 
 **Solution.** The banner is in sixpack.wtf [`a921e64`](https://github.com/STP-KAS/sixpack.wtf/commit/a921e64312931b80d726537ce963b2d298f849f0). The page was not clicked in a browser.
 
+## Kasware lock
+
+**Problem.** The bank showed a Testnet 10 balance, and Lock answered: log in with Kasware or Kastle, or paste a txid. Nothing was sent. The page only asked the wallet when the saved login was already marked Kasware or Kastle. A pasted address, or a Kasware account on that same address whose helper script was not the signer, stopped before the wallet opened.
+
+**Why.** The balance comes from the address. The signature has to come from the wallet that holds that address. Those are not the same check.
+
+**How.** Lock asks Kasware or Kastle when that wallet's account is the address on the page. A saved Kasware login still signs if the extension is in the tab, even when the helper script is missing. A different address does not sign. A mainnet account does not sign. The txid is kept in the paste box if the till does not claim it, and the next Lock claims that same transaction.
+
+**Solution.** That check is in sixpack.wtf [`c170fde`](https://github.com/STP-KAS/sixpack.wtf/commit/c170fde1071d38a9b03c2ae2edc62af3992f4ffa). The page was not clicked in a browser. No coins were sent for the check.
+
 ## Why
 
 The square puts three ways to pay on one counter, so the difference is visible.
@@ -82,7 +92,7 @@ GitHub Pages serves the page. The ledger runs with the sixpack server. The page 
 
 **A shop.** One rail for the whole menu. It opens on POCencept. One Buy button. Prices stay toy cents when the KAS price moves. Coffee is 2.50 toy dollars, supper is 14.00, the roadster is 1.00, and a lap of the square is 100.00. For tKAS, the till converts those cents with the live KAS/USD quote shown on the page. A wallet shop payment asks the till before the wallet signs. The txid stays in the paste box if the till does not claim it, and the next Buy claims that same transaction. A short payment is refused. The same transaction does not mint the tag twice. POCencept and KUSDT move only in the ledger.
 
-**The bank.** The thin bar lists tKAS, POCencept, and KUSDT. The bank opens as a centered swap popup. Three balance cards show tKAS, POCencept, and KUSDT, with locked and purse on the toy cards. Step 1 locks tKAS. Step 2 redeems toy dollars. The Result line on the panel says whether the swap landed. A lock looks for that Testnet 10 payment on the public transaction list. That list stopped storing new payments on 25 Sep 2026. When the list does not have the payment, the server reads it from a synced node, from about the last minute of accepted blocks. The sender and the reserve output still have to match. The live quote and the reserve address sit on the fine line. Three booths. The open booth is the one whose buttons show. tKAS locks into POCencept or KUSDT at the live quote. POCencept redeems the locked part and can hand out the practice purse. KUSDT is the booth with the freeze. The purse adds 20.00 to POCencept and 20.00 to KUSDT. Those coins are unlocked. A shop burns the purse before the locked part. The purse does not redeem. A failed redeem puts the toy balance back. Redeem sends tKAS back only for the locked portion. Opening the bank, a shop, the rules, the bench, or the guide hides Who pays. The peg note sits in Rules.
+**The bank.** Lock asks Kasware or Kastle when that wallet's account is the address on the page. A different address is not spent. A mainnet account is refused. The thin bar lists tKAS, POCencept, and KUSDT. The bank opens as a centered swap popup. Three balance cards show tKAS, POCencept, and KUSDT, with locked and purse on the toy cards. Step 1 locks tKAS. Step 2 redeems toy dollars. The Result line on the panel says whether the swap landed. A lock looks for that Testnet 10 payment on the public transaction list. That list stopped storing new payments on 25 Sep 2026. When the list does not have the payment, the server reads it from a synced node, from about the last minute of accepted blocks. The sender and the reserve output still have to match. The live quote and the reserve address sit on the fine line. Three booths. The open booth is the one whose buttons show. tKAS locks into POCencept or KUSDT at the live quote. POCencept redeems the locked part and can hand out the practice purse. KUSDT is the booth with the freeze. The purse adds 20.00 to POCencept and 20.00 to KUSDT. Those coins are unlocked. A shop burns the purse before the locked part. The purse does not redeem. A failed redeem puts the toy balance back. Redeem sends tKAS back only for the locked portion. Opening the bank, a shop, the rules, the bench, or the guide hides Who pays. The peg note sits in Rules.
 
 **Rules.** A daily cap, a shop list, a rail list, and a confirm line. An empty list allows every shop and every rail. Above the confirm line the till waits for a second yes. On a test tab that yes is checked before the key signs.
 
