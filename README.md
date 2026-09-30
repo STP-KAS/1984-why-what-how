@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`c170fde`](https://github.com/STP-KAS/sixpack.wtf/commit/c170fde1071d38a9b03c2ae2edc62af3992f4ffa). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`1d2153a`](https://github.com/STP-KAS/sixpack.wtf/commit/1d2153a29f38b7b0164874c9c58773e2ab13ebe6). This repository does not run the page.
 
 Read on 30 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -58,6 +58,16 @@ Read on 30 Sep 2026 against that commit. A local edit on this desk that is not i
 
 **Solution.** That check is in sixpack.wtf [`c170fde`](https://github.com/STP-KAS/sixpack.wtf/commit/c170fde1071d38a9b03c2ae2edc62af3992f4ffa). The page was not clicked in a browser. No coins were sent for the check.
 
+## Clerks, and the roadster in front of the shop
+
+**Problem.** The bank showed locked and purse on the same cards as the swap. Changing tKAS into KUSDT meant finding which box was which. The three booth signs sat behind the popup. Kasware opened with one waiting line. The roadster stayed where you got out.
+
+**Why.** Locked toy dollars came from a real tKAS send and can come back. The purse is practice and spends in the shops. Those piles still have to stay apart. The everyday swap does not need both numbers on the first screen. A swap between POCencept and KUSDT can move each pile as itself, so no extra tKAS is locked or freed.
+
+**How.** The bank opens on three clerks. Push tKAS, POCencept, or KUSDT. The open clerk swaps into the other two. The books desk shows locked and purse, says why, and holds the practice purse and the KUSDT freeze. While Kasware is opening, the clerk lists the steps: checking the amount, opening the wallet, the approval, Testnet 10, and the tag. The owned roadster parks in front of Pike's shop. Click it to get in. If you are far, you walk there first. Get out and it goes back. Thrusters show only while it is moving.
+
+**Solution.** That is in sixpack.wtf [`1d2153a`](https://github.com/STP-KAS/sixpack.wtf/commit/1d2153a29f38b7b0164874c9c58773e2ab13ebe6). A local check moved a purse amount without creating a locked balance, then moved an amount that crossed into the locked pile and left the liability unchanged. A frozen KUSDT blocked both directions. The remaining locked pile still redeemed, and the purse still did not. The page was not clicked in a browser. No coins were sent for the check.
+
 ## Why
 
 The square puts three ways to pay on one counter, so the difference is visible.
@@ -74,7 +84,7 @@ KCC-20 is still Draft. There is no spendable layer-1 stable in this till. The th
 
 1984 is a basic, adjustable toy. A person walks up to a shop on proof of work and pays with one of the three rails. The town on the page is Ashfields. The drawing is original: stone town, dirt path, fountain, stalls, and a roadster that stays on the square. A lap is a turn. Jagex art, the RuneScape wordmark, a private-server engine, a soundtrack file, and the Tidewater fishing island are absent.
 
-The shops are Nia's Cafe, Orin's Table, Mara's Groceries, and Pike's Roadster. Stand next to a building and click it to go in. The counter opens as a popup, with a picture on each thing you can buy. One rail, one Buy. Far from the door, that click walks you there, and you go in when you arrive. Pike sells the roadster for 1.00 toy dollar. Buy the roadster and you drive it. Get out to walk. Inside a shop you are on foot. The car does not leave town. Venn's bank is a room with three booths. It opens as a swap popup: a tKAS box, a toy-dollar box, and a Result line on the panel.
+The shops are Nia's Cafe, Orin's Table, Mara's Groceries, and Pike's Roadster. Stand next to a building and click it to go in. The counter opens as a popup, with a picture on each thing you can buy. One rail, one Buy. Far from the door, that click walks you there, and you go in when you arrive. Pike sells the roadster for 1.00 toy dollar. It parks in front of the shop. Click it to get in. Get out and it goes back there. Thrusters show while it moves. Inside a shop you are on foot. The car does not leave town. Venn's bank opens on three clerks. Push tKAS, POCencept, or KUSDT. The open clerk swaps into the other two. Locked coins and the practice purse are explained in the books desk. While Kasware is opening, the steps stay on that clerk.
 
 A welcome gate comes up first. The top bar shows who is paying and the three balances. Who pays starts closed, in the corner. The left side opens the square, the shops, the bank, the spending rules, the bench, and the guide. The page asks for no seed. A mainnet wallet is refused.
 
