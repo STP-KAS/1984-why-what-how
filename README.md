@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`0e86db4`](https://github.com/STP-KAS/sixpack.wtf/commit/0e86db445f84444144119ecad0051ace2934fa55). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`ab1981d`](https://github.com/STP-KAS/sixpack.wtf/commit/ab1981df47e6cd6df3e3faa057a6224b1e1b276e). This repository does not run the page.
 
 Read on 30 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -108,6 +108,16 @@ Read on 30 Sep 2026 against that commit. A local edit on this desk that is not i
 
 **Solution.** That entry is in sixpack.wtf [`0e86db4`](https://github.com/STP-KAS/sixpack.wtf/commit/0e86db445f84444144119ecad0051ace2934fa55). Sixty-four local checks passed. The page was not clicked in a browser. No coins were sent for the check.
 
+## The test wallet sat on one line
+
+**Problem.** New arrival stayed on one line, Opening a test wallet, and the tab never got a wallet.
+
+**Why.** The coins behind that gift are split into millions of small pieces. Putting 50000 tKAS together takes many joins. The page waited on one request and gave up while that work was still running. The line did not say which part was running.
+
+**How.** The page starts the open and then reads the step. If it is still going after a moment, the gate lists checking today's wallets, making the address, connecting, gathering the coins, putting the coins together with the count, signing, and broadcasting. Leave the tab open. A fast open still closes the gate. The gift stays 50000 tKAS. Prices, the walk grid, who signs, and the 0.6 faucet cap stay as they are.
+
+**Solution.** That wait is in sixpack.wtf [`ab1981d`](https://github.com/STP-KAS/sixpack.wtf/commit/ab1981df47e6cd6df3e3faa057a6224b1e1b276e). Seventy local checks passed. One open on this desk finished in about 23 seconds, showed those steps, funded 50000 tKAS, and the tab was closed so the coins return. The page was not clicked in a browser.
+
 ## Why
 
 The square puts three ways to pay on one counter, so the difference is visible.
@@ -126,13 +136,13 @@ KCC-20 is still Draft. There is no spendable layer-1 stable in this till. The th
 
 The shops are Nia's Cafe, Orin's Table, Mara's Groceries, and Pike's Roadster. Stand next to a building and click it to walk in. The card stays shut. The view fades in. The outdoor note hides. A gold ring marks the next step: a clerk, a seat, the counter, or Pike and the sign. After you sit, the ring moves to the menu and the card. In the cafe, and at the table, you sit, then click the menu or the card on the table. The market opens at the counter. The showroom opens when you click Pike or the sign. The bank card opens when you click a clerk. Far from the door, that click walks you there, and you walk in when you arrive. Once the card is open it has one rail, one Buy, and a picture on each thing you can buy. A buy redraws the three balances on that card and on the top bar. Pike sells the roadster for 1.00 toy dollar. It parks in front of the shop. Click it to get in. Get out and it goes back there. Thrusters show while it moves. Inside a shop you are on foot. The car does not leave town. Venn's bank opens on three clerks. Push tKAS, POCencept, or KUSDT. The open clerk swaps into the other two. Locked coins and the practice purse are explained in the books desk. The wallet opens only for a tKAS swap. A shop buy, and a POCencept or KUSDT swap, ask on the page first. While that tKAS swap is opening, the steps stay on the clerk.
 
-A welcome gate comes up first. The top bar shows who is paying and the three balances. Who pays starts closed, in the corner. The left side opens the square, the shops, the bank, the spending rules, the bench, and the guide. The page asks for no seed. A mainnet wallet is refused.
+A welcome gate comes up first. New arrival lists each step while the small coins are joined into the 50000 tKAS gift. The top bar shows who is paying and the three balances. Who pays starts closed, in the corner. The left side opens the square, the shops, the bank, the spending rules, the bench, and the guide. The page asks for no seed. A mainnet wallet is refused.
 
 GitHub Pages serves the page. The ledger runs with the sixpack server. The page calls that server for balances, the live KAS price, a test-tab open, and a shop spend.
 
 ## How
 
-**New arrival** asks the server for a funded test address that exists only in that browser tab. The browser receives the address and a token. It receives no key. The address and token sit in session storage. They are not written into the saved-wallet store. The fund is 50000 tKAS, paid from Grok's Testnet-10 wallet. Close the tab and the leftover is swept back to the reserve after a short grace, so a refresh does not burn the wallet. One thousand of these can be opened in a UTC day. When that allowance is already used, the card closes, the square opens, and the chat says a new test wallet waits until tomorrow. Nothing is minted ahead of a visit. Coins return when the tab closes, so the day's thousand are not all out at once.
+**New arrival** asks the server for a funded test address that exists only in that browser tab. The browser receives the address and a token. It receives no key. The address and token sit in session storage. They are not written into the saved-wallet store. The fund is 50000 tKAS, paid from Grok's Testnet-10 wallet. If those coins are in many small pieces, the gate lists each step and the count until Testnet 10 takes the send. Close the tab and the leftover is swept back to the reserve after a short grace, so a refresh does not burn the wallet. One thousand of these can be opened in a UTC day. When that allowance is already used, the card closes, the square opens, and the chat says a new test wallet waits until tomorrow. Nothing is minted ahead of a visit. Coins return when the tab closes, so the day's thousand are not all out at once.
 
 **Returning** closes the gate and leaves Ashfields open. Who pays stays closed. Kasware, Kastle, a pasted `kaspatest:` address, or a `.kas` name that already resolves stays on this browser and keeps its history. A name that points at you ties the public spend to you. A plain address is the preference here. Creating a name is KNS. This page only resolves one.
 
