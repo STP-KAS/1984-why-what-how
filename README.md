@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`1d2153a`](https://github.com/STP-KAS/sixpack.wtf/commit/1d2153a29f38b7b0164874c9c58773e2ab13ebe6). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`8df68fc`](https://github.com/STP-KAS/sixpack.wtf/commit/8df68fc849ad6a3fcbc7808fad33b348bbe9fea3). This repository does not run the page.
 
 Read on 30 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -68,6 +68,16 @@ Read on 30 Sep 2026 against that commit. A local edit on this desk that is not i
 
 **Solution.** That is in sixpack.wtf [`1d2153a`](https://github.com/STP-KAS/sixpack.wtf/commit/1d2153a29f38b7b0164874c9c58773e2ab13ebe6). A local check moved a purse amount without creating a locked balance, then moved an amount that crossed into the locked pile and left the liability unchanged. A frozen KUSDT blocked both directions. The remaining locked pile still redeemed, and the purse still did not. The page was not clicked in a browser. No coins were sent for the check.
 
+## The page asks before a buy
+
+**Problem.** Logged in with Kasware, a shop buy asked the wallet to sign. A POCencept swap and a KUSDT swap do not move tKAS out of that wallet.
+
+**Why.** The wallet holds the tKAS. The page holds the toy tags. A shop buy and a toy swap can be confirmed on the page. The wallet signs when tKAS leaves it.
+
+**How.** Buy opens a card on the page: you want to buy this for that price, then OK. Not now leaves the balance. A POCencept or KUSDT swap opens the same kind of card. The wallet opens only for a tKAS swap at the bank. With Kasware or Kastle logged in, the shop's tKAS rail does not sign. A new arrival is funded with 50000 tKAS. None were open, so none were sent ahead of a visit.
+
+**Solution.** That is in sixpack.wtf [`8df68fc`](https://github.com/STP-KAS/sixpack.wtf/commit/8df68fc849ad6a3fcbc7808fad33b348bbe9fea3). Fifty-eight local checks passed. The page was not clicked in a browser. No test wallet was minted for the check.
+
 ## Why
 
 The square puts three ways to pay on one counter, so the difference is visible.
@@ -84,7 +94,7 @@ KCC-20 is still Draft. There is no spendable layer-1 stable in this till. The th
 
 1984 is a basic, adjustable toy. A person walks up to a shop on proof of work and pays with one of the three rails. The town on the page is Ashfields. The drawing is original: stone town, dirt path, fountain, stalls, and a roadster that stays on the square. A lap is a turn. Jagex art, the RuneScape wordmark, a private-server engine, a soundtrack file, and the Tidewater fishing island are absent.
 
-The shops are Nia's Cafe, Orin's Table, Mara's Groceries, and Pike's Roadster. Stand next to a building and click it to go in. The counter opens as a popup, with a picture on each thing you can buy. One rail, one Buy. Far from the door, that click walks you there, and you go in when you arrive. Pike sells the roadster for 1.00 toy dollar. It parks in front of the shop. Click it to get in. Get out and it goes back there. Thrusters show while it moves. Inside a shop you are on foot. The car does not leave town. Venn's bank opens on three clerks. Push tKAS, POCencept, or KUSDT. The open clerk swaps into the other two. Locked coins and the practice purse are explained in the books desk. While Kasware is opening, the steps stay on that clerk.
+The shops are Nia's Cafe, Orin's Table, Mara's Groceries, and Pike's Roadster. Stand next to a building and click it to go in. The counter opens as a popup, with a picture on each thing you can buy. One rail, one Buy. Far from the door, that click walks you there, and you go in when you arrive. Pike sells the roadster for 1.00 toy dollar. It parks in front of the shop. Click it to get in. Get out and it goes back there. Thrusters show while it moves. Inside a shop you are on foot. The car does not leave town. Venn's bank opens on three clerks. Push tKAS, POCencept, or KUSDT. The open clerk swaps into the other two. Locked coins and the practice purse are explained in the books desk. The wallet opens only for a tKAS swap. A shop buy, and a POCencept or KUSDT swap, ask on the page first. While that tKAS swap is opening, the steps stay on the clerk.
 
 A welcome gate comes up first. The top bar shows who is paying and the three balances. Who pays starts closed, in the corner. The left side opens the square, the shops, the bank, the spending rules, the bench, and the guide. The page asks for no seed. A mainnet wallet is refused.
 
@@ -92,7 +102,7 @@ GitHub Pages serves the page. The ledger runs with the sixpack server. The page 
 
 ## How
 
-**New arrival** asks the server for a funded test address that exists only in that browser tab. The browser receives the address and a token. It receives no key. The address and token sit in session storage. They are not written into the saved-wallet store. The fund is 10000 tKAS, paid from Grok's Testnet-10 wallet. Close the tab and the leftover is swept back to the reserve after a short grace, so a refresh does not burn the wallet. One thousand of these can be opened in a UTC day. When that allowance is already used, the card closes, the square opens, and the chat says a new test wallet waits until tomorrow. Nothing is minted ahead of a visit. Coins return when the tab closes, so the day's thousand are not all out at once.
+**New arrival** asks the server for a funded test address that exists only in that browser tab. The browser receives the address and a token. It receives no key. The address and token sit in session storage. They are not written into the saved-wallet store. The fund is 50000 tKAS, paid from Grok's Testnet-10 wallet. Close the tab and the leftover is swept back to the reserve after a short grace, so a refresh does not burn the wallet. One thousand of these can be opened in a UTC day. When that allowance is already used, the card closes, the square opens, and the chat says a new test wallet waits until tomorrow. Nothing is minted ahead of a visit. Coins return when the tab closes, so the day's thousand are not all out at once.
 
 **Returning** closes the gate and leaves Ashfields open. Who pays stays closed. Kasware, Kastle, a pasted `kaspatest:` address, or a `.kas` name that already resolves stays on this browser and keeps its history. A name that points at you ties the public spend to you. A plain address is the preference here. Creating a name is KNS. This page only resolves one.
 
