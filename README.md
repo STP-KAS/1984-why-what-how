@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`a684768`](https://github.com/STP-KAS/sixpack.wtf/commit/a684768d31e2b52306645d1f006b4e5225f7fb71). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`f96f6d6`](https://github.com/STP-KAS/sixpack.wtf/commit/f96f6d65dd65f6133140fd6e4d26ad87f537c921). This repository does not run the page.
 
 Read on 30 Sep 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -258,6 +258,16 @@ Read on 30 Sep 2026 against that commit. A local edit on this desk that is not i
 
 **Solution.** That sentence is in sixpack.wtf [`a684768`](https://github.com/STP-KAS/sixpack.wtf/commit/a684768d31e2b52306645d1f006b4e5225f7fb71). Ninety local checks passed. The page was not clicked in a browser. No coins were sent for the check.
 
+## The bill is the spend
+
+**Problem.** The ceiling note named the receive and left the bill thin. The cinema card also sat on the film, and a shuffle held a frozen picture while the next file opened.
+
+**Why.** The coin is for a car, an AI service, a game purchase, or a rented service. A vault is not that spend. The card belongs beside the film. The current film stays up until the next one has a picture.
+
+**How.** The rails note, the guide, [rails.html](https://sixpack.wtf/rails.html), and [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md) at [`5ba9b21`](https://github.com/STP-KAS/stable-staghunt-theory/commit/5ba9b218da7bafd2b0d1fab2847f1d2c60223de0) name that bill. The card sits on the left of the glass. The next film is prepared beside the one on screen, and the glass changes when that film has a picture. The gate stays shut.
+
+**Solution.** That bill and that card are in sixpack.wtf [`f96f6d6`](https://github.com/STP-KAS/sixpack.wtf/commit/f96f6d65dd65f6133140fd6e4d26ad87f537c921). Eighty-nine local checks passed. The page was not clicked in a browser. No coins were sent for the check. `GET /api/faucet` answered 200 before the push.
+
 ## Why
 
 The square puts three ways to pay on one counter, so the difference is visible.
@@ -270,7 +280,7 @@ The square puts three ways to pay on one counter, so the difference is visible.
 
 KCC-20 is still Draft. There is no spendable layer-1 stable in this till. The three rails are Testnet-10 toys on proof of work.
 
-The goal of the chain is a settlement between two people, including while almost nobody takes the coin. The ceiling is a till a stranger can receive on. Proof of stake hands the next block to coins already held. Kaspa is proof of work. It sequences the coin now. Sequencing applications on that work is in process. This square is the classroom under that ceiling. The longer note is [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md).
+The goal of the chain is a settlement between two people, including while almost nobody takes the coin. That bill is a car, an AI service, a game purchase, or a rented service. The ceiling is a till a stranger can receive on. Proof of stake hands the next block to coins already held. Kaspa is proof of work. It sequences the coin now. Sequencing applications on that work is in process. This square is the classroom under that ceiling. The longer note is [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md).
 
 ## What
 
@@ -296,7 +306,9 @@ GitHub Pages serves the page. The ledger runs with the sixpack server. The page 
 
 **Hunt Hall.** Reed's Hunt Hall is the timber building east of the lot. You walk in from the lot. Click Reed, then the board. The button says Promise. You pick a number from 2 to 20. The rows are shapes, and each row lists its own rails. Prices are toy cents. The pack stays hidden until a subset pays. The banner is Pack paid on this square. A snap charges that subset only. Liquidity records the promise and leaves the balances where they were. The same cents do not pay a second row. The wallet still signs only a bank tKAS swap.
 
-**The ceiling.** The guide and the bench say what the chain is for while almost nobody takes the coin. The ceiling is a till a stranger can receive on. Kaspa is proof of work and sequences the coin now. Sequencing applications on that work is in process. This square is not that product. The longer note is [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md).
+**The ceiling.** The guide and the bench say what the chain is for while almost nobody takes the coin. The bill is a car, an AI service, a game purchase, or a rented service. The ceiling is a till a stranger can receive on. Kaspa is proof of work and sequences the coin now. Sequencing applications on that work is in process. This square is not that product. The longer note is [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md).
+
+**The film.** The cinema card sits on the left of the glass. Prev, Next, and Shuffle keep the current film up until the next film has a picture.
 
 **The bank.** Lock asks Kasware or Kastle when that wallet's account is the address on the page. A different address is not spent. A mainnet account is refused. The thin bar lists tKAS, POCencept, and KUSDT. The bank card opens when you click a clerk. It is a centered swap popup. Three balance cards show tKAS, POCencept, and KUSDT, with locked and purse on the toy cards. Step 1 locks tKAS. Step 2 redeems toy dollars. The Result line on the panel says whether the swap landed. A lock looks for that Testnet 10 payment on the public transaction list. That list stopped storing new payments on 25 Sep 2026. When the list does not have the payment, the server reads it from a synced node, from about the last minute of accepted blocks. The sender and the reserve output still have to match. The live quote and the reserve address sit on the fine line. Three booths. Each booth says its name once. The open booth is the one whose buttons show. tKAS locks into POCencept or KUSDT at the live quote. POCencept redeems the locked part and can hand out the practice purse. KUSDT is the booth with the freeze. The purse adds 20.00 to POCencept and 20.00 to KUSDT. Those coins are unlocked. A shop burns the purse before the locked part. The purse does not redeem. A failed redeem puts the toy balance back. Redeem sends tKAS back only for the locked portion. Opening the bank, a shop, the rules, the bench, or the guide hides Who pays. The peg note sits in Rules.
 
