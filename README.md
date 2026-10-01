@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`6b853e6`](https://github.com/STP-KAS/sixpack.wtf/commit/6b853e668cb1a4236958bf2507bc02641bc24041). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`571bffc`](https://github.com/STP-KAS/sixpack.wtf/commit/571bffcfbafe2467c667b6c12ecfee4eb4f3b8aa). This repository does not run the page.
 
 Read on 1 Oct 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -397,6 +397,16 @@ Read on 1 Oct 2026 against that commit. A local edit on this desk that is not in
 **How.** Launch stays free. Prices stay toy dollars. The miner fee on 1984 stays six times the ordinary rate. The faucet stays 0.6 tKAS. The wallet still signs only a bank tKAS swap.
 
 **Solution.** The live page is sixpack.wtf [`6b853e6`](https://github.com/STP-KAS/sixpack.wtf/commit/6b853e668cb1a4236958bf2507bc02641bc24041). One hundred and one local 1984 checks passed. No coins were sent. Serve was not restarted. A no-cache fetch returned 200, last-modified Thu, 01 Oct 2026 20:41:43 GMT, with `1984/client.mjs?v=87`. That client imports `1984/view3d.mjs?v=47` and `1984/reels.mjs?v=4`. Random is `random.js?v=11`. `1984.css?v=49` is unchanged. `wallets/kaspa-wallets.js?v=6` is unchanged. The three files are `random/r40.mp4`, `random/r41.mp4`, and `random/r42.mp4`.
+
+## The balances stay in the top right
+
+**Problem.** The balances left the screen in the cinema and on a flight. They sat across the top, and Bank was only in the side list.
+
+**Why.** The three balances stay in the top right of the view. That card stays up on the square, in a shop, in the cinema, and on a flight. Bank is on that card. On a flight it opens the bank. Elsewhere it walks you to the bank. The fee stays six times the ordinary rate. Prices stay. Launch stays free. The wallet still signs only a bank tKAS swap. The spend gate stays shut.
+
+**How.** Launch stays free. Prices stay toy dollars. The miner fee on 1984 stays six times the ordinary rate. The faucet stays 0.6 tKAS. The wallet still signs only a bank tKAS swap.
+
+**Solution.** The live page is sixpack.wtf [`571bffc`](https://github.com/STP-KAS/sixpack.wtf/commit/571bffcfbafe2467c667b6c12ecfee4eb4f3b8aa). One hundred and two local 1984 checks passed. No coins were sent. Serve was not restarted. A no-cache fetch returned 200, last-modified Thu, 01 Oct 2026 22:33:41 GMT, with `1984/client.mjs?v=88` and `1984.css?v=50`. `wallets/kaspa-wallets.js?v=6` is unchanged. A headless load with the flight, the cinema, and a shop class on the page still showed the card at the top right, with Bank on it.
 
 ## Why
 
