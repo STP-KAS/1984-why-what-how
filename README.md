@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`75b1a18`](https://github.com/STP-KAS/sixpack.wtf/commit/75b1a18604704a092f647cfa3065701b8d7cd6f2). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`6b853e6`](https://github.com/STP-KAS/sixpack.wtf/commit/6b853e668cb1a4236958bf2507bc02641bc24041). This repository does not run the page.
 
 Read on 1 Oct 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -387,6 +387,16 @@ Read on 1 Oct 2026 against that commit. A local edit on this desk that is not in
 **How.** Launch stays free. Prices stay toy dollars. The miner fee on 1984 stays six times the ordinary rate. The faucet stays 0.6 tKAS. The wallet still signs only a bank tKAS swap.
 
 **Solution.** The live page is sixpack.wtf [`75b1a18`](https://github.com/STP-KAS/sixpack.wtf/commit/75b1a18604704a092f647cfa3065701b8d7cd6f2). The link and the sky are in [`7736368`](https://github.com/STP-KAS/sixpack.wtf/commit/773636836e95d56650d1b79d6960b59436598a88). One hundred and four local checks passed. No coins were sent. Serve was not restarted. A headless load of a Jupiter hop reported the cloud shell hidden and the cloudy film off. A no-cache fetch returned 200, last-modified Thu, 01 Oct 2026 20:27:23 GMT, with `1984/client.mjs?v=86`. That client imports `1984/view3d.mjs?v=46` and `1984/kas-spend.mjs?v=2`. `1984.css?v=49` is unchanged. `wallets/kaspa-wallets.js?v=6` is unchanged.
+
+## Three films, and larger boards beside the rocket
+
+**Problem.** Three clips were not on the cinema reel or on Random. The films before launch were the smaller boards, and both stood on the tower side of the rocket.
+
+**Why.** One ticket plays the whole reel, so the new films sit on that reel and on Random. They are Liftoff, What do you think about AI, and Joint address. The left film before launch is twice the earlier size and stands left of the rocket. The right film is twice the earlier size and stands right of the rocket. The left film still plays, then the right one. The countdown still starts when the right film ends. The ship and both roadsters stay. The fee stays six times the ordinary rate. Prices stay. Launch stays free. The wallet still signs only a bank tKAS swap. The spend gate stays shut.
+
+**How.** Launch stays free. Prices stay toy dollars. The miner fee on 1984 stays six times the ordinary rate. The faucet stays 0.6 tKAS. The wallet still signs only a bank tKAS swap.
+
+**Solution.** The live page is sixpack.wtf [`6b853e6`](https://github.com/STP-KAS/sixpack.wtf/commit/6b853e668cb1a4236958bf2507bc02641bc24041). One hundred and one local 1984 checks passed. No coins were sent. Serve was not restarted. A no-cache fetch returned 200, last-modified Thu, 01 Oct 2026 20:41:43 GMT, with `1984/client.mjs?v=87`. That client imports `1984/view3d.mjs?v=47` and `1984/reels.mjs?v=4`. Random is `random.js?v=11`. `1984.css?v=49` is unchanged. `wallets/kaspa-wallets.js?v=6` is unchanged. The three files are `random/r40.mp4`, `random/r41.mp4`, and `random/r42.mp4`.
 
 ## Why
 
