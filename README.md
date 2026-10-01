@@ -4,7 +4,7 @@
 
 # Why, what, how
 
-One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`814e131`](https://github.com/STP-KAS/sixpack.wtf/commit/814e13104f9581a5760cc3a3e90684f529c39c9e). This repository does not run the page.
+One note for the Testnet-10 square at [sixpack.wtf/1984.html](https://sixpack.wtf/1984.html). The page code is [STP-KAS/sixpack.wtf](https://github.com/STP-KAS/sixpack.wtf) at [`75b1a18`](https://github.com/STP-KAS/sixpack.wtf/commit/75b1a18604704a092f647cfa3065701b8d7cd6f2). This repository does not run the page.
 
 Read on 1 Oct 2026 against that commit. A local edit on this desk that is not in that commit is not this note.
 
@@ -377,6 +377,16 @@ Read on 1 Oct 2026 against that commit. A local edit on this desk that is not in
 **How.** Launch stays free. Prices stay toy dollars. The miner fee on 1984 is six times the ordinary rate. The faucet stays 0.6 tKAS. The wallet still signs only a bank tKAS swap.
 
 **Solution.** That rate is in sixpack.wtf [`814e131`](https://github.com/STP-KAS/sixpack.wtf/commit/814e13104f9581a5760cc3a3e90684f529c39c9e). One hundred and three local checks passed. No coins were sent. The till was restarted and answers feerate 600. The public tunnel answers the same. A no-cache fetch returned 200, last-modified Thu, 01 Oct 2026 16:56:23 GMT, with `1984/client.mjs?v=84` and `wallets/kaspa-wallets.js?v=6`. `1984.css?v=49` is unchanged. That client still imports `1984/view3d.mjs?v=45`. rails.html carries the same stamp and says the fee is six times the standard Testnet 10 rate.
+
+## Open the tx, and the orbit is dark
+
+**Problem.** Open the tx opened the general Testnet 10 list. Looking around in orbit played a cloudy sky. The Moon, Mars, Jupiter, and Saturn were painted bands.
+
+**Why.** Open the tx is that payment. The page is `https://tn10.kaspa.stream/transactions/` plus the transaction id. A shop buy, a hunt payment, a guest spend, a bank lock, and a redeem use that same link. If there is no transaction id, the link stays hidden. In orbit, on the coast, at the ejection, and on a hop, the sky is dark and the stars show. The filmed sky stays off those beats, and it stays off the boostback, so turning around does not play clouds. The Earth photograph stays. The Moon map is NASA. Mars, Jupiter, Saturn, and the rings are [Solar System Scope](https://www.solarsystemscope.com/textures), CC BY 4.0. The ship and both roadsters stay. The race stays. The fee stays six times the ordinary rate. Prices stay Moon 2.00, Mars 5.00, Jupiter 8.00, Saturn 12.00, and the abyss 15.00. Launch stays free. The wallet still signs only a bank tKAS swap. The spend gate stays shut.
+
+**How.** Launch stays free. Prices stay toy dollars. The miner fee on 1984 stays six times the ordinary rate. The faucet stays 0.6 tKAS. The wallet still signs only a bank tKAS swap.
+
+**Solution.** The live page is sixpack.wtf [`75b1a18`](https://github.com/STP-KAS/sixpack.wtf/commit/75b1a18604704a092f647cfa3065701b8d7cd6f2). The link and the sky are in [`7736368`](https://github.com/STP-KAS/sixpack.wtf/commit/773636836e95d56650d1b79d6960b59436598a88). One hundred and four local checks passed. No coins were sent. Serve was not restarted. A headless load of a Jupiter hop reported the cloud shell hidden and the cloudy film off. A no-cache fetch returned 200, last-modified Thu, 01 Oct 2026 20:27:23 GMT, with `1984/client.mjs?v=86`. That client imports `1984/view3d.mjs?v=46` and `1984/kas-spend.mjs?v=2`. `1984.css?v=49` is unchanged. `wallets/kaspa-wallets.js?v=6` is unchanged.
 
 ## Why
 
