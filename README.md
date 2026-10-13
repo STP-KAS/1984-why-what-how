@@ -420,7 +420,20 @@ The square puts three ways to pay on one counter, so the difference is visible.
 
 **KUSDT** is a tether-style tag in the same ledger. It exists so a freeze switch can be seen. Freeze blocks KUSDT only. POCencept and tKAS still pay.
 
-KCC-20 is still Draft. There is no spendable layer-1 stable in this till. The three rails are Testnet-10 toys on proof of work.
+KCC-20 is Last Call on kccs main `3fbec524`, not Final. The header sets no Last-Call-Deadline. There is no spendable layer-1 stable in this till. The three rails are Testnet-10 toys on proof of work.
+
+## Known drift (13 Oct 2026)
+
+This note is still the 1 Oct text. The sentences below stay as they were written. This list is where the page code disagrees. Those facts were not rewritten.
+
+- Fee. `faucet/fee-rate.mjs` pays 87 times the ordinary Testnet 10 rate, 8700 sompi per gram, plus a flat 0.87 tKAS. This note still says six times, 600, and 0.06 tKAS. The rate was not changed.
+- Gate. The page offers "Use a funded test address". Kasware and Kastle are withdrawn. This note still names those two buttons.
+- Same browser. The code hands the same funded wallet back to a remembered browser. This note says each test address is used once.
+- Allowance. The code allows 2000 funded test addresses in a day. This note says one thousand. The fund in code is 50000 tKAS. A rails page has also said 2000 tKAS.
+- Town. The page says LUMBRIDGE. This note says Ashfields.
+- SquarePeg. A bank tKAS lock in the current code is a Testnet-10 covenant. POCencept and KUSDT stay on the square ledger. This note says the till compiles no covenant. The ledger tags are not that covenant.
+- Faucet. The public faucet page shows the tKAS balance and says it is closed. A payout request is refused. This note still says the faucet pays 0.6 tKAS.
+- Books. A ledger write needs the test-tab token. Only the address that opened a mint name can mint more. That change is on the desk and is not on the public till.
 
 The goal of the chain is a settlement between two people, including while almost nobody takes the coin. That bill is a car, an AI service, a game purchase, or a rented service. The ceiling is a till a stranger can receive on. Proof of stake hands the next block to coins already held. Kaspa is proof of work. It sequences the coin now. Sequencing applications on that work is in process. This square is the classroom under that ceiling. The longer note is [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md).
 
