@@ -433,7 +433,7 @@ This note is still the 1 Oct text. The sentences below stay as they were written
 - Town. The page says LUMBRIDGE. This note says Ashfields.
 - SquarePeg. A bank tKAS lock in the current code is a Testnet-10 covenant. POCencept and KUSDT stay on the square ledger. This note says the till compiles no covenant. The ledger tags are not that covenant.
 - Faucet. The public faucet page shows the tKAS balance and says it is closed. A payout request is refused. This note still says the faucet pays 0.6 tKAS.
-- Books. A ledger write needs the test-tab token. Only the address that opened a mint name can mint more. That change is on the desk and is not on the public till.
+- Books. A ledger write needs the test-tab token. Only the address that opened a mint name can mint more. An empty SQUARE_OPEN now means closed. A desk keepalive started the till again on 13 Oct after 18:24, so a restarted till loads that closed default. The welcome button on the page was left as it is.
 
 The goal of the chain is a settlement between two people, including while almost nobody takes the coin. That bill is a car, an AI service, a game purchase, or a rented service. The ceiling is a till a stranger can receive on. Proof of stake hands the next block to coins already held. Kaspa is proof of work. It sequences the coin now. Sequencing applications on that work is in process. This square is the classroom under that ceiling. The longer note is [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md).
 
@@ -486,6 +486,35 @@ A vProg guest, in the early prototype, applies one declared step and can be chec
 - [ishum](https://github.com/STP-KAS/ishum)
 - [kusdt-bitcoffee](https://github.com/STP-KAS/kusdt-bitcoffee)
 - [Rails on sixpack.wtf](https://sixpack.wtf/rails.html)
+
+## Phase 0. A write needs the tab, and a closed square stays closed
+
+A ledger write with an address and no test-tab token is refused, and the books stay. A closed square refuses a new test wallet and a ledger write, and a read still answers. Only the address that opened a mint name can mint more. Opening KAS, TKAS, USDT, KUSDT, POC, POCENCEPT, or 1984 is refused. An empty SQUARE_OPEN is closed. SQUARE_OPEN=1 opens it. The desk suite was 221 tests, 0 fail. The welcome button was not edited.
+
+## Phase 1. One statement a day, and one bond
+
+The statement domain is BLAKE3("sixpack-1984-bank-v1"). The epoch is the UTC day number. The body is canonical JSON with sorted keys and whole numbers written as strings: day, ledger_state_blake3, mint_book_blake3, price_list_blake3, squarepeg_locks sorted by outpoint, squarepeg_locked_sompi_total, poc_locked_cents, poc_purse_cents, kusdt_locked_cents, kusdt_purse_cents, kusdt_frozen_count. The on-chain body is blake2b-256 of that text. The signed digest is blake2b-256 of the domain, the day as 8 little-endian bytes, and that body. The purse is listed apart from the locked cents. Lock outpoints are in the text so the tKAS side can be checked. GET /api/1984/statement serves it. The till signs one body per day. If the books move after that, the same signature comes back with booksMoved and no second body is signed. The verify script checks the signature, the live bond, and that each lock outpoint is still unspent. Daily statement files stay off git. The attester key is hot, it is used only for statements, and it is not in git.
+
+The bond app is oneword, launch path launch::oneword-v1. Bounty is 20 percent. The unbond delay is 300 DAA. The beneficiary is the payer key, so it is visible inside the covenant. Every send paid 200 sompi per gram. The ordinary Testnet-10 quote at the time was 100.
+
+A 1 tKAS bond cannot be slashed at that rate. The slash fee comes out of the 0.2 tKAS bounty. Paying 200 sompi per gram makes the slasher output small enough that storage mass goes over the 100,000 gram standard limit. The tool stopped before a broadcast. The bond was topped up by 1 tKAS, to 2 tKAS, and then slashed. Output 0 paid 1.6 tKAS, which is 80 percent. The clean bond is a new 1 tKAS bond on the statement domain. It was not slashed.
+
+Drill domain BLAKE3("sixpack-1984-bank-drill-v1") is d382a99398a59948bb4e610cc8aaabbdbedceecc645bb9e620323e1a427baf40.
+
+- Drill genesis `090de8b4cfb2be4b6a02253e64984745ba60c90109efa860b322183be61d51ac`, covenant `d9119cf270584c4e3228f548735aaf4fd461d5f4c8e41541b11970f6c3713778`, 1 tKAS, fee 0.083798 tKAS, storage 41884. Landed.
+- Top-up `5d1eae3aec22a66c5dc0363f02080ead2f437e4f63708506ff4a1a25d3c840aa`, bond then 2 tKAS, fee 0.005646 tKAS, storage 119. Landed.
+- Slash `db120a2470d0d26ae382f28c1a7fefe7af77c3e5c6bfe703fb0fa06ca82db091`, epoch 7, fee 0.026 tKAS, storage 12987. Output 0 is 1.6 tKAS. Landed.
+- Clean genesis `691b862590abd3eb63931a6c653edd0029b9138fe6d8f7d962f30c4103d59b29`, covenant `06a9f6e23652d49d69c7d32e8deb92e71af782edcb65c48ca2368c3aad22fc26`, 1 tKAS, fee 0.108194 tKAS, storage 54083. Landed.
+
+Day 20739 statement `7104a6c5f6e5687b9e89670a41f6a450a035e72c81f8f4eb6031f368c579e45b` verified. The same signature was served again after the local till was restarted. That till is a separate process and a separate book. Fees for the four transactions are 0.223638 tKAS. The clean bond still locks 1 tKAS. The drill bond does not.
+
+## Phase 2. The on-chain mint was not launched
+
+No SQ1984 family was deployed. The hotcell builder is the template, and its covenant id was not reused. A new family with a 1 tKAS minter and a 1 tKAS carrier on each mint needs about 4 tKAS plus fees for three mints. The coins set aside for this drill, after the bonds, were about 1.78 tKAS. No further wallet coins were taken. KCC-20 stays Last Call, not Final.
+
+## Phase 3. Feetank was not asked for
+
+Feetank was not deployed.
 
 ---
 
