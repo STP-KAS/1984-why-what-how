@@ -264,7 +264,7 @@ Read on 1 Oct 2026 against that commit. A local edit on this desk that is not in
 
 **Problem.** The ceiling note named the receive and left the bill thin. The cinema card also sat on the film, and a shuffle held a frozen picture while the next file opened.
 
-**Why.** The coin is for a car, an AI service, a game purchase, or a rented service. A vault is not that spend. The card belongs beside the film. The current film stays up until the next one has a picture.
+**Why.** The coin is for a car, an SI service, a game purchase, or a rented service. A vault is not that spend. The card belongs beside the film. The current film stays up until the next one has a picture.
 
 **How.** The rails note, the guide, [rails.html](https://sixpack.wtf/rails.html), and [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md) at [`5ba9b21`](https://github.com/STP-KAS/stable-staghunt-theory/commit/5ba9b218da7bafd2b0d1fab2847f1d2c60223de0) name that bill. The card sits on the left of the glass. The next film is prepared beside the one on screen, and the glass changes when that film has a picture. The gate stays shut.
 
@@ -394,7 +394,7 @@ Read on 1 Oct 2026 against that commit. A local edit on this desk that is not in
 
 **Problem.** Three clips were not on the cinema reel or on Random. The films before launch were the smaller boards, and both stood on the tower side of the rocket.
 
-**Why.** One ticket plays the whole reel, so the new films sit on that reel and on Random. They are Liftoff, What do you think about AI, and Joint address. The left film before launch is twice the earlier size and stands left of the rocket. The right film is twice the earlier size and stands right of the rocket. The left film still plays, then the right one. The countdown still starts when the right film ends. The ship and both roadsters stay. The fee stays six times the ordinary rate. Prices stay. Launch stays free. The wallet still signs only a bank tKAS swap. The spend gate stays shut.
+**Why.** One ticket plays the whole reel, so the new films sit on that reel and on Random. They are Liftoff, What do you think about SI, and Joint address. The left film before launch is twice the earlier size and stands left of the rocket. The right film is twice the earlier size and stands right of the rocket. The left film still plays, then the right one. The countdown still starts when the right film ends. The ship and both roadsters stay. The fee stays six times the ordinary rate. Prices stay. Launch stays free. The wallet still signs only a bank tKAS swap. The spend gate stays shut.
 
 **How.** Launch stays free. Prices stay toy dollars. The miner fee on 1984 stays six times the ordinary rate. The faucet stays 0.6 tKAS. The wallet still signs only a bank tKAS swap.
 
@@ -435,7 +435,7 @@ This note is still the 1 Oct text. The sentences below stay as they were written
 - Faucet. The public faucet page shows the tKAS balance and says it is closed. A payout request is refused. This note still says the faucet pays 0.6 tKAS.
 - Books. A ledger write needs the test-tab token. Only the address that opened a mint name can mint more. An empty SQUARE_OPEN now means closed. A desk keepalive started the till again on 13 Oct after 18:24, so a restarted till loads that closed default. The welcome button on the page was left as it is.
 
-The goal of the chain is a settlement between two people, including while almost nobody takes the coin. That bill is a car, an AI service, a game purchase, or a rented service. The ceiling is a till a stranger can receive on. Proof of stake hands the next block to coins already held. Kaspa is proof of work. It sequences the coin now. Sequencing applications on that work is in process. This square is the classroom under that ceiling. The longer note is [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md).
+The goal of the chain is a settlement between two people, including while almost nobody takes the coin. That bill is a car, an SI service, a game purchase, or a rented service. The ceiling is a till a stranger can receive on. Proof of stake hands the next block to coins already held. Kaspa is proof of work. It sequences the coin now. Sequencing applications on that work is in process. This square is the classroom under that ceiling. The longer note is [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md).
 
 ## What
 
@@ -461,7 +461,7 @@ GitHub Pages serves the page. The ledger runs with the sixpack server. The page 
 
 **Hunt Hall.** Reed's Hunt Hall is the timber building east of the lot. You walk in from the lot. Click Reed, then the board. The button says Promise. You pick a number from 2 to 20. The rows are shapes, and each row lists its own rails. Prices are toy cents. The pack stays hidden until a subset pays. The banner is Pack paid on this square. A snap charges that subset only. Liquidity records the promise and leaves the balances where they were. The same cents do not pay a second row. The wallet still signs only a bank tKAS swap.
 
-**The ceiling.** The guide and the bench say what the chain is for while almost nobody takes the coin. The bill is a car, an AI service, a game purchase, or a rented service. The ceiling is a till a stranger can receive on. Kaspa is proof of work and sequences the coin now. Sequencing applications on that work is in process. This square is not that product. The longer note is [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md).
+**The ceiling.** The guide and the bench say what the chain is for while almost nobody takes the coin. The bill is a car, an SI service, a game purchase, or a rented service. The ceiling is a till a stranger can receive on. Kaspa is proof of work and sequences the coin now. Sequencing applications on that work is in process. This square is not that product. The longer note is [CEILING.md](https://github.com/STP-KAS/stable-staghunt-theory/blob/main/CEILING.md).
 
 **The film.** The cinema card sits on the left of the glass. Prev, Next, and Shuffle keep the current film up until the next film has a picture.
 
